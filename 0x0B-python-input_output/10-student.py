@@ -23,7 +23,6 @@ class Student:
 
         If attrs is a list of strings, represents only those attributes included
 
-
         Args:
         attrs (list): (Optional) The attributes to represent.
         """
