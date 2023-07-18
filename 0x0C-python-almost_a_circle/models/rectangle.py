@@ -36,7 +36,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         if type(value) != int:
-            rasie TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
@@ -55,6 +55,11 @@ class Rectangle(Base):
         self.__height = value
 
     @property
+    def x(self):
+        """Set/get the x connection of the Rectangle."""
+        return self.__x
+    
+    @x.setter
     def x(self, value):
         if type(value) != int:
             raise TypeError("x must be an integer")
