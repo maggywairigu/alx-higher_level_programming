@@ -58,7 +58,7 @@ class Rectangle(Base):
     def x(self):
         """Set/get the x connection of the Rectangle."""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         if type(value) != int:
@@ -155,4 +155,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return the pring() and str() repreentation of the Rectangle."""
-        return "[Rectangle] ({}) {}/{} {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
