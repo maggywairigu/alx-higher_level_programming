@@ -32,7 +32,7 @@ class Square(Rectangle):
         """Update the Square.
 
 
-        Args: 
+        Args:
         *args (ints): New attribute values.
         - 1st argument represents id attribute
         - 2nd argument represents size attribute
@@ -81,4 +81,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return the print() and str() representation of a Square."""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
