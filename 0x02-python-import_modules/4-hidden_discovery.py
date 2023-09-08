@@ -1,3 +1,4 @@
+ #!/usr/bin/python3
 import importlib.util
 
 def list_module_names(module_file):
