@@ -19,11 +19,7 @@ fs.readFile(sourceFile1, 'utf8', (err, data1) => {
       return;
     }
 
-    // Concatenate the contents of the two files
-    const concatenatedData = data1 + data2;
-
-    // Write the concatenated data to the destination file
-    fs.writeFile(destinationFile, concatenatedData, 'utf8', (err) => {
+      fs.writeFile(destinationFile, 'utf8', (err) => {
       if (err) {
         console.error(err);
         return;
