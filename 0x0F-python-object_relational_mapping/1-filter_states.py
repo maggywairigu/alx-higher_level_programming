@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+"""
+Lists all states with a name starting with N (upper N)
+from the database hbtn_0e_0_usa:
+Your script should take 3 arguments:
+mysql username, mysql password and database name
+You must use the module MySQLdb (import MySQLdb)
+Your script should connect to a MySQL server running on localhost at port 3306
+Results must be sorted in ascending order by states.id
+"""
 import MySQLdb
 import sys
 
@@ -22,7 +31,8 @@ if __name__ == "__main__":
                              db=database)
         """create a cursor object"""
         cursor = db.cursor()
-        cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+        cursor.execute(
+            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
         states = cursor.fetchall()
         for state in states:
             print(state)
