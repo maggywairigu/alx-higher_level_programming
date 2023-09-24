@@ -38,12 +38,8 @@ if __name__ == "__main__":
         WHERE states.name = %s"
         cursor.execute(query, (search,))
         
-        result = cursor.fetchone()[0]
-        if result:
-            cities = result[0]
-            print(cities)
-        else:
-            print("Not found")
+        cities = cursor.fetchone()[0]
+        print(cities)
 
         cursor.close()
         db.close()
