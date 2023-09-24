@@ -3,7 +3,7 @@
 Takes in arguments and displays all values in the states table
 of hbtn_0e_0_usa where name matches the argument.
 But this time, write one that is safe from MySQL injections!
-Your script should take 4 arguments: 
+Your script should take 4 arguments:
 mysql username, mysql password, database name and state name
 searched (safe from MySQL injection)
 You must use the module MySQLdb (import MySQLdb)
@@ -16,7 +16,8 @@ import sys
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("Usage: python list_states.py <username> <password> <database> <state>")
+        print(
+            "Usage: python list_states.py <usrname> <passwd> <db> <state>")
         sys.exit(1)
 
     username = sys.argv[1]
