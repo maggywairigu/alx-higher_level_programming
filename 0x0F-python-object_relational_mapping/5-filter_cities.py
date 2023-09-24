@@ -37,9 +37,13 @@ if __name__ == "__main__":
         FROM cities JOIN states ON cities.state_id = states.id \
         WHERE states.name = %s"
         cursor.execute(query, (search,))
-
-        cities = cursor.fetchone()[0]
-        print(cities)
+        
+        result = cursor.fetchone()[0]
+        if result:
+            cities = result[0]
+            print(cities)
+        else:
+            print("Not found")
 
         cursor.close()
         db.close()
