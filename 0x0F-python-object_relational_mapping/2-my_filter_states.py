@@ -33,7 +33,7 @@ if __name__ == "__main__":
                              db=database)
         """create a cursor object"""
         cursor = db.cursor()
-        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+        query = "SELECT * FROM states WHERE BINARY name = %s ORDER BY id ASC"
         cursor.execute(query, (search,))
         states = cursor.fetchall()
         for state in states:
