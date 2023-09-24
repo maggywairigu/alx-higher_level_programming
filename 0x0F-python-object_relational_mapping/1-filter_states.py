@@ -31,8 +31,7 @@ if __name__ == "__main__":
                              db=database)
         """create a cursor object"""
         cursor = db.cursor()
-        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-        cursor.execute(query, (state_name,))
+        cursor.execute("SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
         states = cursor.fetchall()
         for state in states:
             print(state)
