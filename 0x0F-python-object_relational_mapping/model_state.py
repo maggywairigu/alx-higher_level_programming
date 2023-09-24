@@ -11,7 +11,7 @@ class attribute name that represents a column of a string with
 maximum 128 characters and can’t be null
 You must use the module SQLAlchemy
 Your script should connect to a MySQL server running on localhost at port 3306
-WARNING: all classes who inherit from Base must be 
+WARNING: all classes who inherit from Base must be
 imported before calling Base.metadata.create_all(engine)
 """
 from sqlalchemy import create_engine
