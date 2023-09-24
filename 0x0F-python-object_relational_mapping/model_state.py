@@ -30,10 +30,10 @@ class State(Base):
         id (int): An auto-generated, unique integer representing the primary key.
         name (str): A string representing the name of the state with a maximum length of 128 characters.
     """
-    __tablename__ = 'states'
+     __tablename__ = 'states'
 
-    id = Column(Integer, nullable=False, autoincrement=True, primary_key=True)
-    name = Column(String(128), nullable=False)
+     id = Column(Integer, nullable=False, autoincrement=True, primary_key=True)
+     name = Column(String(128), nullable=False)
 
 
 Base.metadata.create_all(engine)
