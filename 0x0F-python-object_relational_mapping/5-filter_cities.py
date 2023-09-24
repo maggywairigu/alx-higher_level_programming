@@ -37,7 +37,6 @@ if __name__ == "__main__":
         FROM cities JOIN states ON cities.state_id = states.id \
         WHERE states.name = %s"
         cursor.execute(query, (search,))
-        
         cities = cursor.fetchone()[0]
         print(cities)
 
