@@ -13,12 +13,9 @@ Your script should connect to a MySQL server running on localhost at port 3306.
 WARNING: All classes that inherit from Base must be imported before calling Base.metadata.create_all(engine).
 """
 
-from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
-engine = create_engine(
-    'mysql://root:root/root@localhost:3306/hbtn_0e_6_usa', echo=True)
 Base = declarative_base()
 
 
@@ -31,9 +28,5 @@ class State(Base):
         name (str): A string representing the name of the state with a maximum length of 128 characters.
     """
      __tablename__ = 'states'
-
-     id = Column(Integer, nullable=False, autoincrement=True, primary_key=True)
+     id = Column(Integer,  primary_key=True)
      name = Column(String(128), nullable=False)
-
-
-Base.metadata.create_all(engine)
