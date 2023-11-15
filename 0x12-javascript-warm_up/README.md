@@ -4,23 +4,11 @@
 
 This project focuses on warm-up exercises in JavaScript, covering fundamental concepts such as scripting, web front-end, variables, data types, operators, control flow, functions, objects, arrays, and more. The goal is to gain a solid understanding of JavaScript basics through practical coding exercises.
 
-## Project Details
-
-- **Author**: Guillaume
-- **Weight**: 1
-- **Start Date**: November 13, 2023, 6:00 AM
-- **End Date**: November 16, 2023, 6:00 AM
-- **Auto QA Review**: Will be launched at the deadline
 
 ## Project Overview
 
 In this project, you will be working with JavaScript for scripting purposes and understanding web front-end development. The tasks are designed to reinforce your knowledge of essential JavaScript concepts.
 
-## Auto QA Review Summary
-
-- **Total Mandatory Score**: 39.0/113 (34.51%)
-- **Total Optional Score**: 0.0/29 (0.0%)
-- **Overall Score**: 34.51%
 
 ## Background Context
 
